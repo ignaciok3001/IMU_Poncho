@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com/">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com/">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" href="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/frameworks-bedfc518345498ab3204d330c1727cde7e733526a09cd7df6.css" integrity="sha256-vt/FGDRUmKsyBNMwwXJ83n5zNSagnNffaGf2ojFWUJE=" media="all" rel="stylesheet">
+  <link crossorigin="anonymous" href="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/github-63a53e9762b0d5d8d4f52e5ed8855df0850a00402ac6543862a93.css" integrity="sha256-Y6U+l2Kw1djU9S5e2IVd8IUKAEAqxlQ4Yqk/UGkSMMg=" media="all" rel="stylesheet">
+  
+  
+  <link crossorigin="anonymous" href="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/site-877643c520258c4fa15ac8d1664d84efd0e3db56f5e544ccac58da0.css" integrity="sha256-h3ZDxSAljE+hWsjRZk2E79Dj21b15UTMrFjaDlBImQQ=" media="all" rel="stylesheet">
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>9 DoF Motion Sensor Bakeoff · kriswiner/MPU6050 Wiki · GitHub</title>
+  <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta content="https://avatars1.githubusercontent.com/u/6698410?v=4&amp;s=400" property="og:image"><meta content="GitHub" property="og:site_name"><meta content="object" property="og:type"><meta content="kriswiner/MPU6050" property="og:title"><meta content="https://github.com/kriswiner/MPU6050" property="og:url"><meta content="MPU6050 - Basic MPU-6050 Arduino sketch of sensor function" property="og:description">
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  
+  <meta name="pjax-timeout" content="1000">
+  
+  <meta name="request-id" content="CE80:152B1:4253FC1:6E3A523:59D25AFA" data-pjax-transient="">
+  
+
+  <meta name="selected-link" value="repo_wiki" data-pjax-transient="">
+
+  <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host"><meta content="github" name="octolytics-app-id"><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url"><meta content="CE80:152B1:4253FC1:6E3A523:59D25AFA" name="octolytics-dimension-request_id"><meta content="iad" name="octolytics-dimension-region_edge"><meta content="iad" name="octolytics-dimension-region_render">
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/wiki/show" data-pjax-transient="true" name="analytics-location">
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+  <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="ZWEyOWVmNzcxNTU2NjJkNmM2YmJkYWQ0ZDI3ZTU5OTVlOGJlMGE5ZTMyNWFmYWEwOTQ1NzEyYTNmM2JiNDg2MHx7InJlbW90ZV9hZGRyZXNzIjoiMTgxLjk0Ljg3Ljc5IiwicmVxdWVzdF9pZCI6IkNFODA6MTUyQjE6NDI1M0ZDMTo2RTNBNTIzOjU5RDI1QUZBIiwidGltZXN0YW1wIjoxNTA2OTU4MDc1LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+
+
+  <meta name="html-safe-nonce" content="c43cf8928364f555eeb006c4472c1c737d0fba7f">
+
+  <meta http-equiv="x-pjax-version" content="9ce0ff47aa82ae0b3e0d558a402a9237">
+  
+
+      <link href="https://github.com/kriswiner/MPU6050/commits/master.atom" rel="alternate" title="Recent Commits to MPU6050:master" type="application/atom+xml">
+
+  <meta name="description" content="MPU6050 - Basic MPU-6050 Arduino sketch of sensor function">
+  <meta name="go-import" content="github.com/kriswiner/MPU6050 git https://github.com/kriswiner/MPU6050.git">
+
+  <meta content="6698410" name="octolytics-dimension-user_id"><meta content="kriswiner" name="octolytics-dimension-user_login"><meta content="19560790" name="octolytics-dimension-repository_id"><meta content="kriswiner/MPU6050" name="octolytics-dimension-repository_nwo"><meta content="true" name="octolytics-dimension-repository_public"><meta content="false" name="octolytics-dimension-repository_is_fork"><meta content="19560790" name="octolytics-dimension-repository_network_root_id"><meta content="kriswiner/MPU6050" name="octolytics-dimension-repository_network_root_nwo"><meta content="false" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown">
+
+
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+
+  </head>
+
+  <body class="logged-out env-production">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="px-2 py-4 show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        <header class="Header header-logged-out  position-relative f4 py-3" role="banner">
+  <div class="container-lg d-flex px-3">
+    <div class="d-flex flex-justify-between flex-items-center">
+      <a class="header-logo-invertocat my-0" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+        <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      </a>
+
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--bright d-flex flex-justify-between flex-auto">
+        <nav class="mt-0">
+          <ul class="d-flex list-style-none">
+              <li class="ml-2">
+                <a href="https://github.com/features" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:features" data-selected-links="/features /features/project-management /features/code-review /features/project-management /features/integrations /features">
+                  Features
+</a>              </li>
+              <li class="ml-4">
+                <a href="https://github.com/business" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/security /business/customers /business">
+                  Business
+</a>              </li>
+
+              <li class="ml-4">
+                <a href="https://github.com/explore" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore">
+                  Explore
+</a>              </li>
+
+              <li class="ml-4">
+                    <a href="https://github.com/marketplace" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:marketplace" data-selected-links=" /marketplace">
+                      Marketplace
+</a>              </li>
+              <li class="ml-4">
+                <a href="https://github.com/pricing" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:pricing" data-selected-links="/pricing /pricing/developer /pricing/team /pricing/business-hosted /pricing/business-enterprise /pricing">
+                  Pricing
+</a>              </li>
+          </ul>
+        </nav>
+
+      <div class="d-flex">
+          <div class="d-lg-flex flex-items-center mr-3">
+            <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="/kriswiner/MPU6050/search" class="js-site-search-form" data-scoped-search-url="/kriswiner/MPU6050/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+        <a href="https://github.com/kriswiner/MPU6050/wiki/9-DoF-Motion-Sensor-Bakeoff" class="header-search-scope no-underline">This repository</a>
+      <input class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable" data-hotkey="s" name="q" placeholder="Search" aria-label="Search this repository" data-unscoped-placeholder="Search GitHub" data-scoped-placeholder="Search" autocapitalize="off" type="text">
+        <input class="js-site-search-type-field" name="type" type="hidden">
+    </label>
+</form></div>
+
+          </div>
+
+        <span class="d-inline-block">
+            <div class="HeaderNavlink px-0 py-2 m-0">
+              <a class="text-bold text-white no-underline" href="https://github.com/login?return_to=%2Fkriswiner%2FMPU6050%2Fwiki%2F9-DoF-Motion-Sensor-Bakeoff" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+                <span class="text-gray">or</span>
+                <a class="text-bold text-white no-underline" href="https://github.com/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+            </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main">
+        <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container="">
+      
+
+
+
+
+
+    <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+      <div class="container repohead-details-container">
+
+        <ul class="pagehead-actions">
+  <li>
+      <a href="https://github.com/login?return_to=%2Fkriswiner%2FMPU6050" class="btn btn-sm btn-with-count tooltipped tooltipped-n" aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+    Watch
+  </a>
+  <a class="social-count" href="https://github.com/kriswiner/MPU6050/watchers" aria-label="64 users are watching this repository">
+    64
+  </a>
+
+  </li>
+
+  <li>
+      <a href="https://github.com/login?return_to=%2Fkriswiner%2FMPU6050" class="btn btn-sm btn-with-count tooltipped tooltipped-n" aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="https://github.com/kriswiner/MPU6050/stargazers" aria-label="235 users starred this repository">
+      235
+    </a>
+
+  </li>
+
+  <li>
+      <a href="https://github.com/login?return_to=%2Fkriswiner%2FMPU6050" class="btn btn-sm btn-with-count tooltipped tooltipped-n" aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+        Fork
+      </a>
+
+    <a href="https://github.com/kriswiner/MPU6050/network" class="social-count" aria-label="75 users forked this repository">
+      75
+    </a>
+  </li>
+</ul>
+
+        <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+  <span class="author" itemprop="author"><a href="https://github.com/kriswiner" class="url fn" rel="author">kriswiner</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="https://github.com/kriswiner/MPU6050" data-pjax="#js-repo-pjax-container">MPU6050</a></strong>
+
+</h1>
+
+      </div>
+      <div class="container">
+        
+<nav class="reponav js-repo-nav js-sidenav-container-pjax" itemscope="" itemtype="http://schema.org/BreadcrumbList" role="navigation" data-pjax="#js-repo-pjax-container">
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="https://github.com/kriswiner/MPU6050" class="js-selected-navigation-item reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /kriswiner/MPU6050" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="https://github.com/kriswiner/MPU6050/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /kriswiner/MPU6050/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">13</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="https://github.com/kriswiner/MPU6050/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /kriswiner/MPU6050/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="https://github.com/kriswiner/MPU6050/projects" class="js-selected-navigation-item reponav-item" data-hotkey="g b" data-selected-links="repo_projects new_repo_project repo_project /kriswiner/MPU6050/projects">
+      <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+      Projects
+      <span class="Counter">0</span>
+</a>
+    <a href="https://github.com/kriswiner/MPU6050/wiki" class="js-selected-navigation-item selected reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /kriswiner/MPU6050/wiki">
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path></svg>
+      Wiki
+</a>
+
+    <div class="reponav-dropdown js-menu-container">
+      <button type="button" class="btn-link reponav-item reponav-dropdown js-menu-target " data-no-toggle="" aria-expanded="false" aria-haspopup="true">
+        Insights
+        <svg aria-hidden="true" class="octicon octicon-triangle-down v-align-middle text-gray" height="11" version="1.1" viewBox="0 0 12 16" width="8"><path fill-rule="evenodd" d="M0 5l6 6 6-6z"></path></svg>
+      </button>
+      <div class="dropdown-menu-content js-menu-content">
+        <div class="dropdown-menu dropdown-menu-sw">
+          <a class="dropdown-item" href="https://github.com/kriswiner/MPU6050/pulse" data-skip-pjax="">
+            <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8z"></path></svg>
+            Pulse
+          </a>
+          <a class="dropdown-item" href="https://github.com/kriswiner/MPU6050/graphs" data-skip-pjax="">
+            <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"></path></svg>
+            Graphs
+          </a>
+        </div>
+      </div>
+    </div>
+</nav>
+
+      </div>
+    </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+  <div id="wiki-wrapper" class="wiki-wrapper page">
+  <div class="gh-header">
+    <div class="gh-header-show">
+      <h1 class="gh-header-title instapaper_title">9 DoF Motion Sensor Bakeoff</h1>
+        <div class="gh-header-meta">
+          Kris Winer edited this page <relative-time datetime="2015-07-28T22:02:07Z" title="Jul 28, 2015, 7:02 PM GMT-3">on Jul 28, 2015</relative-time>
+          ·
+          <a href="https://github.com/kriswiner/MPU6050/wiki/9-DoF-Motion-Sensor-Bakeoff/_history" class="history">
+            80 revisions
+          </a>
+        </div>
+    </div>
+  </div>
+  <div id="wiki-content" class="wiki-content">
+    <div class="has-rightbar">
+
+    <div id="wiki-rightbar" class="wiki-rightbar">
+      <div class="wiki-pages-box readability-sidebar boxed-group flush js-wiki-pages-box " role="navigation">
+        
+<h3 class="js-wiki-toggle-collapse wiki-auxiliary-content">
+  <svg aria-hidden="true" class="octicon octicon-triangle-down caret-expanded" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M0 5l6 6 6-6z"></path></svg>
+  <svg aria-hidden="true" class="octicon octicon-triangle-right caret-collapsed" height="16" version="1.1" viewBox="0 0 6 16" width="6"><path fill-rule="evenodd" d="M0 14l6-6-6-6z"></path></svg>
+  Pages <span class="Counter">7</span>
+</h3>
+<div class="boxed-group-inner wiki-auxiliary-content wiki-auxiliary-content-no-bg">
+
+  <ul class="wiki-pages" data-filterable-for="wiki-pages-filter" data-filterable-type="substring">
+    <li>
+      <strong><a href="https://github.com/kriswiner/MPU6050/wiki" class="wiki-page-link">Home</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/kriswiner/MPU6050/wiki/2014-Invensense-Developer%27s-Conference" class="wiki-page-link">2014 Invensense Developer's Conference</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/kriswiner/MPU6050/wiki/9-DoF-Motion-Sensor-Bakeoff" class="wiki-page-link">9 DoF Motion Sensor Bakeoff</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/kriswiner/MPU6050/wiki/Affordable-9-DoF-Sensor-Fusion" class="wiki-page-link">Affordable 9 DoF Sensor Fusion</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/kriswiner/MPU6050/wiki/Hardware-Sensor-Fusion-Solutions" class="wiki-page-link">Hardware Sensor Fusion Solutions</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/kriswiner/MPU6050/wiki/Simple-and-Effective-Magnetometer-Calibration" class="wiki-page-link">Simple and Effective Magnetometer Calibration</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/kriswiner/MPU6050/wiki/Small-Pressure-Sensors" class="wiki-page-link">Small Pressure Sensors</a></strong>
+    </li>
+  </ul>
+</div>
+
+      </div>
+
+
+      <h5 class="mt-0 mb-2">Clone this wiki locally</h5>
+      <div class="width-full input-group js-zeroclipboard-container">
+        <input class="form-control input-sm text-small text-gray input-monospace js-url-field js-zeroclipboard-target" aria-label="Clone URL for this wiki" value="https://github.com/kriswiner/MPU6050.wiki.git" readonly="readonly" type="text">
+        <span class="input-group-button">
+          <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><svg aria-hidden="true" class="octicon octicon-clippy" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"></path></svg></button>
+        </span>
+      </div>
+
+
+    </div>
+
+    <div id="wiki-body" class="wiki-body gollum-markdown-content instapaper_body">
+        <div class="markdown-body">
+          <p><strong>Since I wrote</strong> about <a href="https://github.com/kriswiner/MPU-6050/wiki/Affordable-9-DoF-Sensor-Fusion">Affordable 9 DoF Sensor Fusion</a> and <a href="https://github.com/kriswiner/MPU-6050/wiki/Small-Pressure-Sensors">Small Pressure Sensors</a>
+ more than a year ago I have made sufficient progress in my continuing 
+studies of motion sensors and sensor fusion to warrant another article. 
+This time I will compare the performance of several popular pressure 
+sensors and 9 DoF (integrated accelerometers, gyroscopes, and 
+magnetometers) motion sensors and how their differences affect simple 
+open-source sensor fusion results. It might seem strange at first to 
+include pressure sensors in such a study but they offer altimetry which 
+can complement and stabilize height assessments when pressure data is 
+folded into the sensor fusion solution. We will demonstrate this in a 
+subsequent article.</p>
+<p><strong>The pressure sensors</strong> are Measurement Specialties' <a href="http://www.meas-spec.com/product/pressure/MS5637-02BA03.aspx">MS5637</a>, ST Microelectronics' <a href="http://www.st.com/web/catalog/sense_power/FM89/SC1316/PF255230?icmp=pf255230_pron_pr_feb2014">LPS25H</a>, Bosch's <a href="http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp280/bmp280">BMP280</a>, and Invensense's <a href="http://www.invensense.com/products/7-axis/">ICM20730</a> new 7-axis (accel/gyro/pressure sensor) motion sensor.</p>
+<p><img src="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/0e2c87fa-078c-11e5-9e4d-6aa5ee329af9.jpg" alt="Pressure Sensor Test Board">
+<strong><a href="https://www.oshpark.com/shared_projects/n9svR8Cx">Pressure sensor test board</a> used in this study:</strong> <em>(clockwise from top left)</em> MS5637, ICM20730 (evaluation sample), BMP280, and LPS25H.</p>
+<p><strong>The 9 DoF motion sensors</strong> are Invensense's <a href="http://store.invensense.com/ProductDetail/MPU9250-InvenSense-Inc/487537/">MPU9250</a>, ST Microelectronics' <a href="http://www.st.com/web/en/catalog/sense_power/FM89/SC1448/PF258556">LSM9DS0</a>, Maxim Integrated's <a href="http://www.maximintegrated.com/en/products/analog/sensors-and-sensor-interface/MAX21100.html">MAX21100</a> (no magnetometer), and Bosch's <a href="http://www.bosch-sensortec.com/en/homepage/products_3/9_axis_sensors_5/ecompass_2/bmx055_1/bmx055">BMX055</a>.</p>
+<p><img src="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/1d514fb8-078c-11e5-858d-d5bdf40d9be2.jpg" alt="Motion Sensor Test Board"></p>
+<p><strong><a href="https://www.oshpark.com/shared_projects/2tfogi30">Motion sensor test board</a> used in this study:</strong> <em>(clockwise from top left)</em> BMX055, MPU9250, LSM9DS0, and MAX21100.</p>
+<p>It is useful to have all the sensors in a given category on the same 
+board. That way any variation in power supply noise, board stresses from
+ assembly, and environmental differences during testing are minimized. 
+We can test the response of different sensors to the same stimulus at 
+the same time under the same conditions. We have also attempted to 
+maintain as much commonality in the software as possible and to use 
+similar sample data rates, bandwidths, <em>etc</em> where possible to make the tests fair.</p>
+<p>Now, this study is not meant to be an exhaustive characterization of 
+every aspect of performance; the manufacturers publish expected 
+performance of these sensors in the respective data sheets and expensive
+ machines are <a href="http://www.vectornav.com/support/library/calibration">used to quantify</a>
+ specific sensor performance parameters. Nor are we including every 
+available 9 DoF motion or pressure sensor solution. Notably absent is ST
+ Microelectronics' newer <a href="http://www.st.com/web/catalog/sense_power/FM89/SC1448/PF259998?icmp=pf259998_pron_p3508d_dec2013">LSM9DS1</a>,
+ and there are a variety of 6 DoF accel/gyro motion sensors that can be 
+paired with a separate magnetometer to provide a 9 DoF solution. Also 
+absent is the MS5611, and a variety of other pressure sensors from <a href="http://www.mouser.com/ProductDetail/Omron-Electronics/2SMPB-01-01/?qs=sGAEpiMZZMvhQj7WZhFIAGno%2fTsaT32xPEB%252bYgMbNEHHFqao9ACq6w%3d%3d">OMRON</a>, <em>etc</em>.
+ Rather, our purpose here is to answer two questions: Are there 
+significant differences in performance between available 9 DoF motion 
+sensor solutions and, if so, is there any practical effect on the 
+corresponding sensor fusion solution?</p>
+<p>In some sense we are asking, which is the "best" accelerometer, gyro,
+ magnetometer, and altimeter to use for absolute orientation or position
+ reckoning. Remember, here we are limiting the study to a narrow 
+selection of small, inexpensive, MEMS sensors and any differences will 
+only matter if we can detect their effect in the resulting sensor fusion
+ output. We will use <a href="http://www.x-io.co.uk/res/doc/madgwick_internal_report.pdf">Madgwick's</a> simple open-source MARG sensor fusion algorithm so all the sensors are evaluated on the same footing.</p>
+<p>The testing here shall be rather simple but practically useful. We 
+want to characterize the random or white noise associated with each 
+sensor at rest, and the drift of the sensor output over time. These are 
+of practical importance since motion sensor data are often integrated to
+ get position or as part of a PID (proportion, integral, differential) 
+error correction algorithm. White noise or jitter limits the inherent 
+accuracy of the sensor measurements while drift will introduce large 
+errors in orientation and position estimates rather quickly.</p>
+<p>The sensors do not allow identical settings of sample data rate, 
+filtering, etc., but we tried to get close enough not to bias the 
+comparisons too much. Let's start with the easiest comparisons, the 
+pressure sensors. It is difficult to use the same settings since each of
+ these sensors uses a different strategy to reduce noise. Here is a 
+table of the relevant settings for the test:</p>
+<p><img src="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/7acdf3ea-0795-11e5-93cf-ef3f2fda1e77.jpg" alt="Pressure sensor test settings"></p>
+<p><strong>Pressure sensor test settings</strong></p>
+<p><strong>Most pressure sensors</strong> use oversampling to internally
+ average the pressure (and temperature) before it is read out by the 
+microcontroller. This is the simple strategy used by the MS5637 (and 
+MS5611). The LPS25H also uses this strategy but has an additional means 
+to average the data via the use of its 96 byte First-In-First-Out (FIFO)
+ buffer. With it's FIFO mean mode an additional user-specified averaging
+ can be done as data samples are accumulated in the FIFO buffer. This 
+allows the power usage for this device to be very low while maintaining 
+high resolution data output. At least that is the claim. The Bosch 
+BMP280 also uses oversampling but has a low-pass filter in addition to 
+simple averaging which reduces noise quite effectively. The tradeoff is a
+ rather long standby time while the sensor processes the data. For most 
+altimetry, a ~10 Hz rate is probably sufficient, but there is definitely
+ a trade-off between low-noise and sample rate.</p>
+<p>The results of a simple test of the jitter or white noise from these four pressure sensors is shown below.</p>
+<p><img src="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/c4fcb938-1532-11e5-926c-d0e465da9d50.jpg" alt="pressure data">
+<strong>Pressure data from the MS5637, LPS25H, BMP280, and ICM20730</strong></p>
+<p>This test spans only about a minute of data (x-axis is milliseconds) 
+where in the middle the pressure sensor test board was raised from the 
+desk, where it starts out, to the ceiling (or at least as high as I 
+could reach) and then back again. We can learn a lot from this simple 
+short test. Firstly, there is a difference between the absolute 
+pressures (here given in millibar) reported by the four sensors. At 
+least they all fall within +/- 2 millibars of the mean (+/- 0.2% 
+absolute accuracy is pretty good). They all do a pretty good job
+of indicating that the pressure changes when the height changes by ~6 
+feet or so. But the inherent jitter displayed by the four sensors is 
+different. So different, in fact, that the pressure changes due to 
+height are hard to discern in the worst case. It might be common sense, 
+and we have by no means proved anything here yet, but one might expect 
+that low inherent jitter would be required for the best position and 
+orientation accuracy. The trick is to reduce the jitter by good design, 
+low-pass filtering, averaging or what have you without destroying the 
+ability of the sensor to discriminate small changes, here in pressure. 
+Based on this simple test, we must conclude that the BMP280 is doing a 
+pretty good job at balancing these two requirements, with the MS5637 a 
+close second. In fact, one could argue the MS5637 is the better of the 
+two since it responds quickly to small variations in the pressure due to
+ altitude changes while providing low enough jitter to distinguish the 
+changes.</p>
+<p>There is another important requirement for pressure sensor 
+performance---namely long-term drift. This one is tricky because the 
+ambient pressure does change even on relatively short time scales like 
+hours. Here we will simply ask whether there is significant drift over 
+the period of one hour. For most navigation applications this provides a
+ sufficient measure of drift since the baseline from which drift is 
+measured can be periodically zeroed. Yes, there are some applications 
+where pressure sensor drift could be catastrophic. But for everyday 
+navigation, meaning determining how high someone climbed on a hike, or 
+what floor we happen to be on at the mall, we want to know what the 
+relative error over a short period might be. In particular, we want to 
+know if there is any difference between the four pressure sensors being 
+tested here in the way of short-term (~1 hour) stability. Below is a 
+pressure plot from the same four pressure sensors during a ~two hour 
+session where the pressure sensor test board sat on a desk and spewed 
+data to a serial monitor inside my house. The scales are millibars and 
+seconds, not milliseconds this time. So the record is just less than two
+ hours.</p>
+<p><img src="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/b19dd8d2-154f-11e5-8b1a-8833391e8fcb.jpg" alt="pressure drift data"></p>
+<p>Notice that each of the pressure sensors detects the same signal 
+changes. That is, there appears to be two slight peaks in the pressure 
+at ~2000 s and ~3000 s. The drift here is likely due to a real change on
+ the household pressure; it is unlikely four independent pressure sensor
+ would have internal drift so closely matched. Note also that the drift 
+is less than 1 millibar, or less than 0.1 %, for all the pressure 
+sensors over nearly a two hour period. Overall, this is pretty good 
+performance. Of course, the <a href="http://www.engineeringtoolbox.com/air-altitude-pressure-d_462.html">change in altitude</a>
+ corresponding to a 1 millibar pressure change is ~30 feet! So you might
+ not be able to tell if you left your car on tier 3 or tier 5 of the 
+parking garage with pressure data alone. But more importantly, there is 
+really nothing to distinguish the performance of one pressure sensor 
+over another except the jitter as discussed above.</p>
+<p><img src="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/8947fff6-2257-11e5-88ab-b6ef5814e36f.jpg" alt="MS5637 altitude drift"><img src="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/9593ebd0-2257-11e5-91c4-158f1cc46662.jpg" alt="LPS25H altitude drift"><img src="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/a8554c78-2257-11e5-9612-85a575a4cdd6.jpg" alt="BMP280 altitude drift"></p>
+<p><em>Results of the pressure drift test translated into relative 
+altitude variations over the same ~2 hour period; altitude in cm. The 
+altitude variations are about 1 meter; good enough to find your car at 
+the mall parking garage! (Top, MS5637, Middle, LPS25H, Bottom, BMP280)</em></p>
+<p>There are more or less application-specific tradeoffs with respect to
+ device footprint, cost, and power usage that ought to be considered as 
+well as technical performance. Here, the BMP280 is exceptional. It is 2 
+mm x 2.5 mm, 20% smaller than the next smallest pressure sensor, the 
+LPS25H at 2.5 mm x 2.5 mm. It can be purchased in quantity as low as 
+$1.69 each, compared to $1.80 for the MS5637 and $2.50 for the LPS25H. 
+The ICM20730 is not yet available and inclusion here is really unfair. 
+The ICM20730 pressure sensor I tested here is an engineering evaluation 
+unit with an embedded 6 DoF motion sensor. It is a unique device not 
+commercially available yet, and certainly not in the pre-production form
+ I tested it in. So apologies to Invensense for even mentioning it here,
+ but the fact is I did include it on my pressure sensor test board and 
+did test it. So truth in advertising---I am just reporting what I found.
+ Power usage is not the highest priority for every application like it 
+is for cellphones, but almost all of these devices take ~10s of 
+microAmps to run at full blast. Hardly worth worrying about next to 
+performance considerations IMHO.</p>
+<p><strong>Let's talk about motion sensors.</strong> We'll start with perhaps the most mysterious one, the magnetometer. Modern MEMS magnetometers use the <a href="http://www.memslibrary.com/guest-articles/45-physics/65-what-is-hall-effect.html">Hall effect</a>
+ to measure tiny currents in a moving silicon plate that are 
+proportional to the ambient magnetic field. The motion sensors translate
+ the sensed analog current into raw digital counts via an ADC 
+(analog-to-digital converter) on the embedded ASIC (application-specific
+ integrated circuit) and the microcontroller that reads the raw digital 
+data via I2C or SPI protocol then scales it into the more familiar 
+(milli)Gauss. The utility of the magnetometer as part of a suite of 
+motion sensors for sensor fusion is it provides a second absolute 
+reference frame  in addition to gravity since the magnetic fields 
+measured are usually dominated by that of the Earth (about 500 
+milliGauss oriented along the North Pole).</p>
+<p>Let's repeat our simple test of jitter and drift for the three magnetometers on our test board, the <a href="http://www.akm.com/akm/en/product/datasheet1/?partno=AK8963">AK8963C</a> embedded inside the MPU9250, the <a href="http://www.bosch-sensortec.com/en/homepage/products_3/3_axis_sensors/geomagnetic_sensors_3/bmm150/bmm150">BMM150</a> embedded inside the BMX055, and the <a href="http://www.st.com/web/catalog/sense_power/FM89/SC1449/PF255198">LIS3MDL</a> (?) embedded inside the LSM9DS0.</p>
+<p><img src="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/44605bf4-2270-11e5-9e1e-fb87076d7b6a.jpg" alt="magnetometer drift"></p>
+<p><em>Jitter and drift for the three magnetometers embedded in the 9 
+DoF motion sensors tested here: the MPU9250 (I), BMX055 (B), and LSM9DS0
+ (L).</em></p>
+<p>There are couple of interesting things to observe in the data. 
+Firstly, the orientation of the magnetometers is not the same. The 
+MPU9250 and LSM9DS0 (yellow and light blue at the top, respectively) 
+have their positive z-axes pointed down on our test board while the 
+BMX055 (brown at the bottom) has its positive z-axis pointed up. Even 
+though each magnetometer has been <a href="https://github.com/kriswiner/MPU-6050/wiki/Simple-and-Effective-Magnetometer-Calibration">bias calibrated</a>
+ by measuring the minimum/maximum excursion on each axis during a 
+figure-eight motion on startup to allow recentering of the respective 
+response surfaces on the origin, the BMX055 and MPU9250 read very 
+different values for the z-axis magnetic field (~450 mG) compared to the
+ average z-axis magnetic field measured by the LSM9DS0 (~330 mG). There 
+could be at least two reasons for this. One, the BMX055 magnetometer 
+doesn't measure magnetic fields like the other two sensors. It measures a
+ 13-bit output on the X/Y axes and a 15-bit output on the z-axis and the
+ resistance of the Hall sensor plate. These four data are combined in 
+software through a wickedly complicated set of formulae to produce 
+3-axis, temperature-compensated 16-bit magnetic fields. It is possible 
+that when I transcribed the formulae from the Bosch application program I
+ made a mistake. However, the fact that the MPU9250 and BMX055 report 
+similar values makes this unlikely. Secondly, the response of the three 
+axes in each sensor is likely to be different and a second bias 
+calibration is needed to sphere-ize (rescale) the response to make it 
+equal along all three axes. In other words, in addition to being 
+centered off the origin, the response surface is likely to be 
+non-spherical as well with no calibration. This can be seen below:</p>
+<p><img src="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/0ef210dc-2312-11e5-819c-5cab26f0cc26.jpg" alt="magskew">
+<em>X-axis magnetic field (in mG) plotted against Z-axis magnetic field 
+for the three magnetometers on our test board when undergoing a 
+figure-eight motion.</em></p>
+<p>The data clouds are more or less centered at the origin as they 
+should be after the recentering bias calibration performed on start up. 
+The small cluster of points for each cloud is the response of the 
+magnetometers at rest (where the data should read Mx = ~+/-200 mG, Mz = 
+~+/-400 mG). It is interesting to note that response surfaces of the 
+BMX055 and MPU9250 seem to be rotated wrt each other by 90 degrees. 
+Notice that none of these data clouds is perfectly circular in shape; 
+all three magnetometers have some cross-axis skew which for the full 3D 
+response surface requires a 3 x 3 calibration matrix to correct. The 
+correction should take the ellipsoidal response surface and spherize it 
+by scaling the axial responses. It is a straightforward but 
+mathematically hairy set of matrix equations. And we can see that this 
+skew is one reason for the LSM9DS0 underestimating the z-axis magnetic 
+field. But the LSM9DS0 response surface is definitely smaller than the 
+other two. It looks like it needs to be scaled up by about 20%. I am not
+ sure I understand how such an error could arise in the coding where a 
+factor of two error might occur, but not a 20% error. Mysterious indeed!</p>
+<p>The jitter in the data is comparable at about 14 mG or ~3% on the 
+z-axis and between 1 and 3% on the x and y axes for this particular test
+ data. I have noticed that the jitter changes from test run to run 
+probably because the sensors were slightly moved during the test. Below 
+is another data set where I took extra care not to move the sensors 
+during the test run. You can see that the general trends are the same 
+but the absolute magnitude of the magnetic fields have changed a bit. 
+The jitter in the second set of data is smaller, being less than 2% for 
+all three sensors on all three axes and a remarkable 1-2 mG for the x- 
+and y-axes of the LSM9DS0. It is very difficult to return the sensors to
+ a fixed orientation to test reproducibility without some sort of 
+fixture (easily done, I just didn't do it). The drift in all cases seems
+ to be acceptably small. Except for the absolute accuracy, there is not 
+much to distinguish these magnetometers.</p>
+<p><img src="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/301717a6-2279-11e5-8507-d544f6b28e49.jpg" alt="magnetometer drift"></p>
+<p><em>Another set of data measuring jitter and drift for the three 
+magnetometers embedded in the 9 DoF motion sensors tested here: the 
+MPU9250, BMX055, and LSM9DS0. Every time I measure it is a little bit 
+different! Time now is seconds.</em></p>
+<p>According to the National Oceanic and Atmospheric Administration <a href="http://www.ngdc.noaa.gov/geomag/magfield.shtml">website</a>,
+ the magnetic fields for my area should be 226 mG North, 55 mG East, and
+ -426 mG down. In this light, the Bosch magnetic sensor seems to be 
+doing very well. The MPU9250 is about 5% too high in the z-direction, 
+while the LSM9DS0 is about 20% low. Unless you plan to use the 
+magnetometer in a Star Trek <a href="http://tricorderproject.org/">tricorder</a>
+ it shouldn't matter that the absolute value of the magnetic field is 
+off, but it is a curious result. For absolute orientation it is the 
+relative change in magnetic field that can compensate for gyroscope 
+drift, which is the bane of all IMUs.</p>
+<p>So lets talk <strong>gyro performance</strong>. The gyro is literally
+ the heart of the sensor fusion engine since measured rotation rates are
+ a direct measure of the rate of change of the quaternion representation
+ of the sensor orientation. Any non-zero component of the gyro signal 
+due to offset and/or drift will accumulate as an error in orientation 
+that will <a href="https://github.com/kriswiner/MPU-6050/wiki/Affordable-9-DoF-Sensor-Fusion">rather quickly frustrate</a>
+ any effort to maintain heading without some compensation. Fortunately, 
+even noisy gyro data can be successfully compensated with average 
+accelerometer and magnetometer performance. We will ask how the quality 
+of data input affects the resulting sensor fusion solution soon. But 
+first let's continue with our simple-minded comparison of jitter and 
+drift, this time using the four gyros on our test board.</p>
+<p><img src="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/0d7dd966-228b-11e5-9baa-53d54adf407d.jpg" alt="gyro drift"></p>
+<p><em>Drift of the z-component of the four gyros (MPU9250 = Iz, BMX055 =
+ Bz, MAX21100 = Mz, and LSM9DS0 = Lz). The data traces have been 
+separated by 1 dps for clarity. Note the millidps and second scales. 
+Standard deviation for the four data traces are 49, 44, 56, and 215 
+mdps, respectively.</em></p>
+<p>The plot of the four gyro outputs when motionless shows the inherent 
+jitter of the devices as well as the offset from the ideal 0, 1, 2, and 3
+ dps for the MPU9250, BMX055, MAX21100, and LSM9DS0, respectively. The 
+jitter is pretty good for three of the four coming in around 50 
+millidegrees per second or 0.02% of the ~250 dps full scale. The 
+exception is the LSM9DS0 which has almost five times the jitter of the 
+best performer. Still not too shabby at 0.1% of full scale but there is 
+no reason I can think of why the LSM9DS0 should be an outlier here. Of 
+course, noise is undesirable but I find the offset a bit more troubling,
+ and so should you.</p>
+<p>Each of these sensors has the average measured bias at rest 
+subtracted from the output data so one would naively think the average 
+deviation for all three would be zero. It is not. Rather it is 18 mdps 
+for the MPU9250, 93 for the BMX055, 358 for the MAX21100, and -48 for 
+the LSM9DS0. The jitter will lead to error in the sensor fusion as the 
+square-root of the standard deviation whereas a non-zero mean deviation 
+will add a linear term to the error growth. That's why removing the 
+average bias is important. Perhaps I should have averaged over a longer 
+period, but I suspect no amount of averaging will eliminate this kind of
+ offset. it is precisely what leads to heading drift and what sensor 
+fusion with the accelerometer and magnetometer data is designed to 
+correct for. The fusion allows a nearly instantaneous bias correction to
+ make sure that the quaternion is sensitive to (mostly) real changes in 
+rotation rate. Just based on these two measures, average and standard 
+deviation, we have to give the nod to the MPU9250. It still remains to 
+be seen whether we can measure the effects of these differences in the 
+sensor fusion results. Soon...</p>
+<p>The last item in our 9 DoF sensor bakeoff is <strong>the accelerometer</strong>.
+ The accelerometer is the first means of correcting the drift from the 
+gyro by imposing the constraint of an absolute reference frame, gravity.
+ The jitter of the accelerometer is as important as that of the other 
+two types of sensor since the gyro drift correction is only as good as 
+the input accelerometer data. Also, we really want a low drift 
+accelerometer since both the white noise and errors in the apparent 
+acceleration caused by accelerometer drift will wrongly compensate the 
+gyro resulting in heading accuracy loss. Like the gyro, we remove the 
+accelerometer bias by subtracting the average of a few data taken with 
+the sensors at rest. The result for an ideal accelerometer would be zero
+ mean deviation, with the jitter characterized by the standard 
+deviation. Representative data is plotted below where only the z-axis 
+accelerometer data from the four sensors on our board is shown with a 20
+ mg offset between the traces for clarity.</p>
+<p><img src="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/1862173a-231b-11e5-9766-ff5ed1ea0eeb.jpg" alt="accelerometer drift"></p>
+<p><em>Blown up z-axis traces of the MPU9250 = Iz, BMX055 = Bz, MAX21100
+ = Mz, and LSM9DS0 = Lz). Ideal values would be 1000, 980, 1020, and 
+1040 mg, respectively. Plot shows milli g versus seconds with the sensor
+ at rest.</em></p>
+<p>The traces cover about 30 minutes of data, enough to see the main 
+trends. The traces are again offset by 20 mg for clarity. The average 
+deviations from the ideal values of 1000, 980, 1020, and 1040 mg of the 
+z-axis accelerations measured for the MPU9250, BMX055, MAX21100, and 
+LSM9DS0 are 0, -10, +10, and 0 mg, respectively. At worst this deviation
+ is 0.5% of the 2 g full scale. Very impressive! There is almost no 
+drift except in the case of the MAX21100 where a linear fit shows a 
+slope of 0.5 microg per second or ~2 mg per hour; the drift rates of the
+ other three accelerometers is 0.2 microg per second. Despite the 
+disparate drift results, the accelerometers show a standard deviation or
+ jitter of 2, 7, 3, and 3 mg for the MPU9250, BMX055, MAX21100, and 
+LSM9DS0, respectively. The BMX055 has the largest jitter as can plainly 
+be seen in the figure. This result is somewhat disappointing since the 
+BMX055 gyro and magnetometer seem to behave pretty well.</p>
+<p><strong>I will sum up</strong> the results of our bake off by process
+ of elimination. Firstly, we have shown that the LSM9DS0 has a larger 
+offset from the expected magnetic field than the other two 
+magnetometers, and that the gyro has a large jitter. The BMX055 shows a 
+larger jitter in the accelerometer data by a factor of two compared to 
+the other accelerometers in this test. Lastly, the MAX21100 shows a 
+large offset in the gyro data compared to the other three. Offset can be
+ compensated for but jitter is inherent in the sensor response and 
+should be weighted accordingly. We can't pick and choose (easily) the 
+individual sensor components to make up our 9 DoF motion sensor but it 
+looks like we don't have to. By process of elimination the MPU9250 
+offers the same or better performance for all three sensor data types in
+ this test than every other sensor. In this case it is possible with 
+some work to pair the MPU6500 gyro/accel of the MPU9250 (or MAX21100) 
+with many other magnetometers if so desired. But for my money, I 
+recommend the MPU9250 for the combination of performance, as discussed 
+above, small 3 mm x 3 mm footprint, availability, and reasonable cost.</p>
+<p><strong>Does any of this matter for heading accuracy?</strong> Let's find out...</p>
+<p>I used the calibrated and scaled motion sensor test board data as input to the Madgwick <a href="http://vigir.missouri.edu/%7Egdesouza/Research/Conference_CDs/RehabWeekZ%C3%BCrich/icorr/papers/Madgwick_Estimation%20of%20IMU%20and%20MARG%20orientation%20using%20a%20gradient%20descent%20algorithm_ICORR2011.pdf">MARG</a>
+ (magnetic, angular rate and gravity) sensor fusion filter to calculate 
+heading (yaw) pitch and roll. With the sensor board laying motionless 
+and flat on my desk, the roll and pitch are within a degree of zero all 
+the time. This is an easy feat even for 6 DoF sensor fusion without a 
+magnetometer. The hard part is accurate absolute heading with little or 
+no drift. Here is a plot of the heading estimated from the sensor data 
+of the four sensors on the motion sensor test board:</p>
+<p><img src="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/98571dcc-233f-11e5-8e6d-42e1383438e9.jpg" alt="Madgwick MARG"></p>
+<p><em>Heading estimated from the MPU9250, BMX055, MAX21100 (using the MPU9250 mag data), and the LSM9DS0.</em></p>
+<p>The MAX21100 has no embedded magnetometer so I used the magnetometer 
+data from the MPU9250. In fact, an interesting experiment would be to 
+use the three different magnetometer data with the MAX21100 accel and 
+gyro data to see more directly if differences in the magnetometer data 
+affect the sensor fusion result (see below). The heading estimate is 
+recorded for about two minutes with the sensor board lying flat on the 
+desk at a fixed orientation. Then at the two minute mark the board is 
+rotated ninety degrees, and this is repeated until a full 360 degree 
+rotation has been achieved. At 800 seconds I moved the board all around 
+for 30 seconds to see if vigorous motion would throw off the heading 
+estimate. For an ideal motion sensor and sensor fusion combination, we 
+should expect to see a steady heading at rest and heading changes of 
+ninety degrees every two minutes, with the final heading matching the 
+beginning heading.</p>
+<p>What we actually see is that headings estimated from the four motion 
+sensor data inputs do not agree. I paid particular attention to make 
+sure the sensor data was passed to the Madgwick filter in the proper 
+North, East, Down (NED) convention I chose for my reference frame. The 
+initial heading should be about -45 degrees, since the edge of my desk 
+where the board begins the experiment is about 45 degrees from True 
+North. The LSM9DS0 comes close. The MPU9250 and MAX21100 estimates are 
+about 15 degrees too high and the BMX055 estimate is about 20 degrees 
+too low. As the board is rotated through ninety degrees we see that the 
+headings change by about this value but not quite. Looking at the first 
+three steps in the plot, the difference between them should be 180 
+degrees. And it is for the LSM9DS0. But it is 220 degrees for the BMX055
+ and 165 degrees for the MPU9250/MAX21100. It is not surprising that the
+ MPU9250 and MAX21100 track so closely together; they both are pretty 
+low-noise, low-drift accelerometer/gyro sensors and they are using the 
+same magnetometer data! The deviation from 180 degrees here is another 
+manifestation of the ellipsoidal magnetometer response surface. In fact,
+ the gyro and accelerometer usually suffer from this sort of non-uniform
+ response surface too. A proper sensor calibration would record the 
+response of all three sensors in different orientations and correct for 
+the non-uniform response surface as well as the recentering usually 
+done.</p>
+<p>The good news is that all four heading estimates return to their 
+original value not only after the full rotation but after some vigorous 
+motion, as expected from previous studies. So the relative orientation 
+estimate using simple sensor fusion is robust, but 9 DoF sensor fusion 
+promises absolute orientation accuracy. Can we devise a simple 
+calibration routine to improve these results?</p>
+<p>More to come....</p>
+
+        </div>
+
+    </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+
+    </div>
+  </div>
+
+  </div>
+
+      
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">© 2017 <span title="0.08933s from unicorn-842932866-wxgv0">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com/" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+
+    <a href="https://github.com/" aria-label="Homepage" class="footer-octicon" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+    <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li class="mr-3"><a href="https://developer.github.com/" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li class="mr-3"><a href="https://shop.github.com/" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li class="mr-3"><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg>
+    <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+    </button>
+    You can't perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha256-2wbV5cxQi1mj1tFsIrtSMAXKn8DFE8uwObMqJSBLa+c=" src="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/frameworks-db06d5e5cc508b59a3d6d16c22bb523005ca9fc0c513cbb039.js"></script>
+    
+    <script async="async" crossorigin="anonymous" integrity="sha256-VQwrxaic6OUkfx5ukpBF0M9cVpMIr5C4G3dUsOuSJxI=" src="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/github-550c2bc5a89ce8e5247f1e6e929045d0cf5c569308af90b81b7754.js"></script>
+    
+    
+      <script crossorigin="anonymous" integrity="sha256-voda7PJe2ujXQzPOW9bW1hejrv5YVsdyFvPS34SUwls=" src="9%20DoF%20Motion%20Sensor%20Bakeoff%20%C2%B7%20kriswiner_MPU6050%20Wiki%20%C2%B7%20GitHub_files/wiki-be875aecf25edae8d74333ce5bd6d6d617a3aefe5856c77216f3d2df.js"></script>
+
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+    </button>
+  </div>
+</div>
+
+
+  
+
+
+</body></html>
