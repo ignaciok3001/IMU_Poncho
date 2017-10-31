@@ -42,9 +42,9 @@ Sheet 2 2
 Title ""
 Date ""
 Rev ""
-Comp ""
-Comment1 "Autor: Ignacio Kalauz"
-Comment2 ""
+Comp "EduCIAA"
+Comment1 "Revisor: Lucas Quiroga"
+Comment2 "Autor: Ignacio Kalauz"
 Comment3 ""
 Comment4 ""
 $EndDescr
