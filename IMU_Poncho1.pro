@@ -1,4 +1,4 @@
-update=dom 29 oct 2017 17:11:43 ART
+update=mié 22 nov 2017 19:34:38 -03
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=IMU_Poncho.pretty;lib/ej2.pretty;lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -61,5 +61,5 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-LibName33=libs/Poncho_Esqueleto
-LibName34=libs/imu_Poncho
+LibName33=lib/Poncho_Esqueleto
+LibName34=/home/igna/Materias_sistemas_Embebidos/Diseno_PCB/Ponchos/kicad/libModelos/Misc_Poncho_Grande
