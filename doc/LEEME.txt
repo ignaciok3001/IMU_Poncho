@@ -1,0 +1,9 @@
+IMU_Poncho ============= 
+ 
+Este circuito es un poncho para la placa EDU-CIAA-NXP que brinda informacion de un sensor inercial y un barometro. Se puede leer datos en 3D de aceleracion, rotacion, campo magnetico, como tambien presion atmosferica y temperatura. 
+ 
+URL: http://www.proyecto-ciaa.com.ar/devwiki/doku.php?id=desarrollo:ciaa:ponchos 
+FUNCIÓN: Sensor para navegacion inercial. 
+AUTORES/INSTITUCIONES: Ignacio Kalauz. 
+File contents are unchanged.
+

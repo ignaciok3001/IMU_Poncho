@@ -39,14 +39,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "IMU Poncho EduCIAA"
+Title "Poncho Derecho - Navegador Inercial - EduCIAA"
 Date "2017-10-17"
 Rev "1.0"
 Comp "EduCIAA"
-Comment1 "Revisor: Lucas Quiroga"
-Comment2 "Autor: Ignacio Kalauz"
-Comment3 ""
-Comment4 ""
+Comment1 "https://github.com/ignaciok3001/IMU_Poncho.git"
+Comment2 "Licencia: doc/LICENCIA.txt"
+Comment3 "Revisor: Lucas Quiroga"
+Comment4 "Autor: Ignacio Kalauz"
 $EndDescr
 $Comp
 L IMU9250 U1
