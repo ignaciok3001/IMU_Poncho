@@ -493,4 +493,37 @@ Text Notes 2100 5750 0    60   ~ 0
 Agujeros para vizualizar los\nLEDs de la placa EduCIAA
 NoConn ~ 2450 6050
 NoConn ~ 3000 6050
+$Comp
+L LOGO #G?
+U 1 1 5A187136
+P 1200 7000
+F 0 "#G?" H 1200 6597 60  0001 C CNN
+F 1 "LOGO" H 1200 7403 60  0001 C CNN
+F 2 "" H 1200 7000 60  0000 C CNN
+F 3 "" H 1200 7000 60  0000 C CNN
+	1    1200 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logo_Poncho #G?
+U 1 1 5A187181
+P 2300 7000
+F 0 "#G?" H 2250 6600 60  0001 C CNN
+F 1 "Logo_Poncho" H 2500 6600 60  0001 C CNN
+F 2 "" H 2300 7000 60  0000 C CNN
+F 3 "" H 2300 7000 60  0000 C CNN
+	1    2300 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSHWA #G?
+U 1 1 5A1871D7
+P 3100 7050
+F 0 "#G?" H 3070 7450 60  0001 C CNN
+F 1 "OSHWA" H 3100 7353 60  0001 C CNN
+F 2 "" H 3100 7050 60  0000 C CNN
+F 3 "" H 3100 7050 60  0000 C CNN
+	1    3100 7050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

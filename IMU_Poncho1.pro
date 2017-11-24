@@ -1,4 +1,4 @@
-update=mié 22 nov 2017 19:34:38 -03
+update=jue 23 nov 2017 18:47:14 -03
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=IMU_Poncho.pretty;lib/ej2.pretty;lib
@@ -63,3 +61,5 @@ LibName31=contrib
 LibName32=valves
 LibName33=lib/Poncho_Esqueleto
 LibName34=/home/igna/Materias_sistemas_Embebidos/Diseno_PCB/Ponchos/kicad/libModelos/Misc_Poncho_Grande
+[general]
+version=1
